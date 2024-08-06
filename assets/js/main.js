@@ -39,7 +39,37 @@ function checkSectionInView() {
       currentSection.classList.add("bounceInLeft");
       const title1 = currentSection.querySelectorAll(".title");
       const description = currentSection.querySelectorAll(".description");
+      title1.forEach((el) => {
+        el.classList.add("fadeIn");
+      });
+      description.forEach((el) => {
+        el.classList.add("fadeIn");
+      });
     } else if (currentSection.id === "section2") {
+      new WOW().init();
+      function count() {
+        const counters = document.querySelectorAll(".number");
+        const speed = 100; // Adjust the speed as needed
+
+        counters.forEach((counter) => {
+          const updateCount = () => {
+            const target = +counter.getAttribute("data-target");
+            const count = +counter.innerText;
+
+            const increment = target / speed;
+
+            if (count < target) {
+              counter.innerText = Math.ceil(count + increment);
+              setTimeout(updateCount, 100);
+            } else {
+              counter.innerText = target;
+            }
+          };
+
+          updateCount();
+        });
+      }
+      count();
       currentSection.classList.add("bounceInRight");
       const title = currentSection.querySelectorAll(".title");
       const content = currentSection.querySelectorAll(".content");

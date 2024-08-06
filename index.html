@@ -369,32 +369,5 @@
     </footer>
 
     <script src="assets/js/wow.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-    <script>
-      document.addEventListener("scrollend", () => {
-        const counters = document.querySelectorAll(".number");
-        const speed = 100; // Adjust the speed as needed
-
-        counters.forEach((counter) => {
-          const updateCount = () => {
-            const target = +counter.getAttribute("data-target");
-            const count = +counter.innerText;
-
-            const increment = target / speed;
-
-            if (count < target) {
-              counter.innerText = Math.ceil(count + increment);
-              setTimeout(updateCount, 50);
-            } else {
-              counter.innerText = target;
-            }
-          };
-
-          updateCount();
-        });
-      });
-    </script>
   </body>
 </html>

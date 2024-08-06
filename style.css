@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -396,7 +397,6 @@ nav .list {
     padding: 0 10px; /* Maintain horizontal padding */
   }
 }
-
 
 .companies {
   display: block;
@@ -798,8 +798,6 @@ nav .list {
   }
 }
 
-
-
 /* Achievements Section Styling */
 .achievements-section {
   background-color: #f3f3f3; /* Light background color */
@@ -889,7 +887,7 @@ nav .list {
   .achievements-section .title {
     font-size: 32px;
   }
-  
+
   .achievements-section .number {
     font-size: 40px;
   }
@@ -971,7 +969,6 @@ nav .list {
   }
 }
 
-
 .scroll-section {
   height: 100vh;
   display: flex;
@@ -983,5 +980,3 @@ nav .list {
   transform: translateY(100px);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
-
-

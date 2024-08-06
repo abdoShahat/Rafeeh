@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rafeeh Entertainment Group</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="animate.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rafeeh Entertainment Group</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="animate.css" />
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+  <body>
     <header class="header">
       <ul class="info">
         <li>
@@ -56,10 +57,7 @@
 
       <div class="video">
         <video autoplay muted loop>
-          <source
-            src="assets/screen.mp4"
-            type="video/mp4"
-          />
+          <source src="assets/screen.mp4" type="video/mp4" />
         </video>
 
         <div class="content-wrapper">
@@ -76,10 +74,10 @@
       </div>
     </header>
 
-    <div class="about">
-      <h2 class="title wow bounceInLeft">ABOUT US</h2>
+    <section class="about" id="section1">
+      <h2 class="title wow">ABOUT US</h2>
 
-      <p class="description wow bounceInLeft">
+      <p class="description wow">
         <span>
           Rafeeh Entertainment Group was founded by Albaltan Group with already
           having his feet cemented in the property and investment industries.
@@ -89,32 +87,31 @@
           today
         </span>
       </p>
-    </div>
+    </section>
 
     <!-- Achievements Section -->
-<section class="achievements-section achievements">
-  <div class="content">
-    <h2 class="title">Achievements</h2>
-    <div class="stats">
-      <div class="stat">
-        <div class="number" data-target="5">0</div>
-        <div class="label">Companies</div>
+    <section class="achievements-section achievements" id="section2">
+      <div class="content">
+        <h2 class="title">Achievements</h2>
+        <div class="stats">
+          <div class="stat">
+            <div class="number" data-target="5">0</div>
+            <div class="label">Companies</div>
+          </div>
+          <div class="stat">
+            <div class="number" data-target="105">0</div>
+            <div class="label">Employees</div>
+          </div>
+          <div class="stat">
+            <div class="number" data-target="30">0</div>
+            <div class="label">Projects</div>
+          </div>
+        </div>
       </div>
-      <div class="stat">
-        <div class="number" data-target="105">0</div>
-        <div class="label">Employees</div>
-      </div>
-      <div class="stat">
-        <div class="number" data-target="30">0</div>
-        <div class="label">Projects</div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Achievements Section -->
+    </section>
+    <!-- End Achievements Section -->
 
-
-    <section class="our-vision">
+    <section class="our-vision" id="section3">
       <div class="content">
         <h2 class="title wow bounceInLeft">
           <img src="assets/icons/double-arrow.svg" alt="double arrow" />
@@ -146,8 +143,8 @@
       </div>
     </section>
 
-    <section class="our-event">
-      <div class="header wow bounceInLeft">
+    <section class="our-event" id="section4">
+      <div class="header wow">
         <h2 class="title">
           <img src="assets/icons/double-arrow.svg" alt="double arrow" />
           <span> Our Event Management </span>
@@ -205,7 +202,7 @@
       </div>
     </section>
 
-    <section class="success-partners wow bounceInLeft">
+    <section class="success-partners wow bounceInLeft" id="section5">
       <div class="content">
         <div class="header">
           <h2 class="title">Success <br />Partners</h2>
@@ -221,7 +218,7 @@
       </div>
     </section>
 
-    <section class="waves wow bounceInRight">
+    <section class="waves wow bounceInRight" id="section6">
       <div class="col">
         <img src="assets/waves/1.svg" alt="" />
       </div>
@@ -243,7 +240,7 @@
       </div>
     </section>
 
-    <section class="our-event no-bg wow bounceInLeft">
+    <section class="our-event no-bg wow bounceInLeft" id="section7">
       <div class="header">
         <h2 class="title">
           <img src="assets/icons/double-arrow.svg" alt="double arrow" />
@@ -261,8 +258,8 @@
         <div class="side">
           <img src="assets/white-logo.svg" alt="" />
           <p class="description">
-            We ara a Group was founded by Albaltan Group with already
-            having his feet cemented in the property.
+            We ara a Group was founded by Albaltan Group with already having his
+            feet cemented in the property.
           </p>
 
           <div class="contacts">
@@ -376,17 +373,17 @@
       new WOW().init();
     </script>
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const counters = document.querySelectorAll('.number');
+      document.addEventListener("DOMContentLoaded", () => {
+        const counters = document.querySelectorAll(".number");
         const speed = 100; // Adjust the speed as needed
-  
-        counters.forEach(counter => {
+
+        counters.forEach((counter) => {
           const updateCount = () => {
-            const target = +counter.getAttribute('data-target');
+            const target = +counter.getAttribute("data-target");
             const count = +counter.innerText;
-  
+
             const increment = target / speed;
-  
+
             if (count < target) {
               counter.innerText = Math.ceil(count + increment);
               setTimeout(updateCount, 50);
@@ -394,7 +391,7 @@
               counter.innerText = target;
             }
           };
-  
+
           updateCount();
         });
       });

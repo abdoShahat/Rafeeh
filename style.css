@@ -407,7 +407,7 @@ nav .list {
 }
 
 .scroll {
-  width: 190%;
+  width: 100%;
   margin: auto;
   overflow: hidden;
 }
@@ -856,18 +856,6 @@ nav .list {
 .achievements-section .label {
   font-size: 18px;
   color: #4a569b;
-}
-
-/* Add animation */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .achievements-section .stat {

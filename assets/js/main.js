@@ -58,15 +58,15 @@ function checkSectionInView() {
         el.classList.add("zoomIn");
       });
     } else if (currentSection.id === "section3") {
-      currentSection.classList.add("fadeIn"); // Example, you can add other animations
+      currentSection.classList.add("fadeIn");
     } else if (currentSection.id === "section4") {
-      currentSection.classList.add("slideIn"); // Example, you can add other animations
+      currentSection.classList.add("slideIn");
     } else if (currentSection.id === "section5") {
-      currentSection.classList.add("slideIn"); // Example, you can add other animations
+      currentSection.classList.add("bounceInLeft");
     } else if (currentSection.id === "section6") {
-      currentSection.classList.add("slideIn"); // Example, you can add other animations
+      currentSection.classList.add("bounceInRight");
     } else if (currentSection.id === "section7") {
-      currentSection.classList.add("slideIn"); // Example, you can add other animations
+      currentSection.classList.add("bounceInLeft");
     }
   }
 }

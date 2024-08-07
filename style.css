@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -397,7 +398,6 @@ nav .list {
   }
 }
 
-
 .companies {
   display: block;
   margin: auto;
@@ -407,7 +407,7 @@ nav .list {
 }
 
 .scroll {
-  width: 190%;
+  width: 100%;
   margin: auto;
   overflow: hidden;
 }
@@ -798,8 +798,6 @@ nav .list {
   }
 }
 
-
-
 /* Achievements Section Styling */
 .achievements-section {
   background-color: #f3f3f3; /* Light background color */
@@ -860,36 +858,12 @@ nav .list {
   color: #4a569b;
 }
 
-/* Add animation */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.achievements-section .stat {
-  animation: fadeInUp 0.6s ease-in-out;
-}
-
-.achievements-section .stat:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.achievements-section .stat:nth-child(3) {
-  animation-delay: 0.4s;
-}
-
 /* Responsive Design */
 @media (max-width: 1200px) {
   .achievements-section .title {
     font-size: 32px;
   }
-  
+
   .achievements-section .number {
     font-size: 40px;
   }
@@ -971,7 +945,6 @@ nav .list {
   }
 }
 
-
 .scroll-section {
   height: 100vh;
   display: flex;
@@ -983,5 +956,3 @@ nav .list {
   transform: translateY(100px);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
-
-

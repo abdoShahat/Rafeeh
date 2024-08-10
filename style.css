@@ -179,6 +179,9 @@ nav .list {
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (max-width: 600px) {
+  nav {
+    padding-bottom: 30px !important;
+  }
   .video .title {
     font-size: 2rem;
     color: #4474d7;
@@ -410,6 +413,18 @@ nav .list {
   max-width: 100%;
   margin-bottom: 0; /* Ensure no additional bottom margin on images */
 }
+/*small screens mobile*/
+@media screen and (max-width: 768px) {
+  .waves .col {
+    flex: 1 1 33.333%;
+    max-width: 33.333%;
+    padding: 0 5px; /* Maintain horizontal padding */
+  }
+  .header h2,
+  .header span {
+    font-size: 1.5rem !important;
+  }
+}
 
 /* Medium screens (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
@@ -469,11 +484,10 @@ nav .list {
 .footer .content {
   padding-inline: 100px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   border-bottom: 1px solid #363636;
 }
-
 .footer .content .side,
 .footer .content .news-letter {
   padding-block: 3rem;

@@ -179,6 +179,9 @@
 .bounce:hover {
   animation: bounce 1.2s infinite;
 }
+.bounceInfinite {
+  animation: bounce 1.2s infinite;
+}
 @keyframes jello {
   0% {
     transform: none;
@@ -230,4 +233,21 @@
 
 .flash {
   animation: flash 2s infinite;
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation: zoomIn 1s ease both;
 }

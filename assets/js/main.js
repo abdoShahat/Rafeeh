@@ -9,11 +9,10 @@ function throttle(fn, wait) {
     }
   };
 }
-
+new WOW().init();
 function checkSectionInView() {
   const sections = document.querySelectorAll("section");
   let currentSection = null;
-
   sections.forEach((section) => {
     const rect = section.getBoundingClientRect();
     if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
@@ -29,7 +28,8 @@ function checkSectionInView() {
         "slideIn",
         "zoomIn",
         "bounceInLeft",
-        "bounceInRight"
+        "fadeInUp",
+        "slideInUp"
       );
     });
     currentSection.classList.add("target-section");
@@ -46,7 +46,6 @@ function checkSectionInView() {
         el.classList.add("fadeIn");
       });
     } else if (currentSection.id === "section2") {
-      new WOW().init();
       function count() {
         const counters = document.querySelectorAll(".number");
         const speed = 100; // Adjust the speed as needed
@@ -93,8 +92,12 @@ function checkSectionInView() {
       currentSection.classList.add("slideIn");
     } else if (currentSection.id === "section5") {
       currentSection.classList.add("bounceInLeft");
+      const side = currentSection.querySelectorAll(".side");
+      side.forEach((el) => {
+        el.classList.add("pulse");
+      });
     } else if (currentSection.id === "section6") {
-      currentSection.classList.add("bounceInRight");
+      currentSection.classList.add("fadeIn");
     } else if (currentSection.id === "section7") {
       currentSection.classList.add("bounceInLeft");
     }

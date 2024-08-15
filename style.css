@@ -380,9 +380,10 @@ nav .list {
 }
 
 .success-partners .side img {
-  position: absolute;
   inset-inline-end: 0;
   top: -3rem;
+  max-width: 524px !important;
+  max-height: 830px !important;
 }
 
 .waves {

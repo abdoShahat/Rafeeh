@@ -219,6 +219,9 @@
   animation: jello 1s both;
   animation-iteration-count: infinite;
 }
+.jelloOnce {
+  animation: jello 1s both;
+}
 @keyframes flash {
   0%,
   50%,

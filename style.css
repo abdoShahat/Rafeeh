@@ -281,7 +281,7 @@ nav .list {
 }
 
 .our-event {
-  background-image: url("assets/our-event/subtle-prism.svg");
+  background-image: url("assets/our-event/subtle-prism_1.svg");
   background-repeat: no-repeat;
   background-size: contain;
   padding-top: 4.5rem;
@@ -395,7 +395,7 @@ nav .list {
   padding-top: 4.5rem;
   padding-bottom: 121px;
   padding-inline: 2rem;
-  background-image: url("assets/our-event/subtle-prism.svg");
+  background-image: url("assets/our-event/subtle-prism_1.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
